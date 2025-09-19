@@ -49,46 +49,150 @@
 \maketitle
 
 \begin{abstract}
+
   Här skriver du en kort sammanfattning av rapporten som innehåller
   det viktigaste. 
+
 \end{abstract}
 
 \section{Introduktion}
-  \label{sec:introduktion}
+\label{sec:introduktion}
+
   Vi blir medvetna om en skidbacke som har fallhöjden 500 meter. Banprofilen ser 
   du i en bild 
   med höjden $y$ km som är en funktion av sträckan $x$ km.
   Sambandet mellan $y$ och $x$ ges av att
+
   \begin{align}
     \label{eq:1}
-    &y = 0,5e^{-x^2} \\
-    0 \le~&x \le 2,5
+    y &= 0,5e^{-x^2} \nonumber \\
+    0 &\le~x \le 2,5 \nonumber
   \end{align}
-\section{Deluppgift A}
-  \label{sec:uppg1}
-  Deluppgift A vill att man ska lösa för backens lutning där $x = 0,8$.\\
-  Vi får också veta att ett allmänt sätt att beskriva backar med liknande
-  banprofil som i grafen ges av
-  \begin{displaymath}
-    y = 0,5e^{-ax^2}
-    \quad \text{,} \quad 
-    0 \le x \le 2,5
-    \text{ där $a$ är en positiv konstant.}
-  \end{displaymath}
-  \newpage
-  Eftersom att lutningen är  
-  $x = 0,8$ 
-  och $y=0,5e^{-x^2}$ 
-  vet man då att lutningen är derivatan. Vi får då derivatan:
-  \begin{equation}
-    y\prime = -x \cdot e^{-(x^4)}
-  \end{equation}
 
-\section{Nästa (del-) uppgift}
+\section{Deluppgift A}
+
+\label{sec:uppg1}
+
+  \subsection{Frågan}
+
+    Deluppgift A vill att man ska lösa för backens lutning där $x = 0,8$.\\
+    Vi ska alltså derivera en sammansatt funktion för att bestämma lutningen \\
+    i en viss punkt på backen. \\
+    I frågan använder vi oss av sambanden:
+
+    \begin{align}
+      \label{eq:2}
+      y &= 0,5e^{-x^2} \nonumber \\
+      x &= 0,8 \nonumber
+    \end{align}
+
+  \newpage
+
+  \subsection{Lösningen}
+
+    \begin{align}
+      \label{eq:3}
+      x &= 0,8 \nonumber \\
+      y &= 0,5e^{-x²} \nonumber \\
+      y^{\prime}(0,8) &= -0,8 \cdot e^{-(0,8²)} \\
+      &=-0,42. \nonumber
+    \end{align}
+
+  \subsection{Motiveringen}
+
+    Vi bestämde lutningen som $x = 0,8$ och eftersom att lutningen är det samma
+    som derivatan får vi då att $y^{\prime} = -x \cdot e^{-(x²)}$. Därifrån är 
+    det bara att byta ut $x$ mot $0,8$ och lösa uppgiften.
+
+\section{Deluppgift B}
 \label{sec:uppg2}
 
-\section{Och ännu nästa (del-) uppgift...}
-\label{sec:uppgN}
+    \subsection{Frågan}
+
+      Fråga B vill att vi ska ställa upp en ekvation för bestämning av 
+      $x$-värdet.
+      I frågan får vi ny relevant information om att ett allmänt sätt att 
+      beskriva backar med liknande banprofil som i uppgift A kan ges av 
+      funktionen: 
+
+      \begin{displaymath}
+        y = 0,5e^{-ax²}
+        \quad \text{,} \quad
+        0 \le x \le 2,5 
+        \text{ där } a \text{ är en positiv konstant.}
+      \end{displaymath}
+
+    \subsection{Lösningen}
+
+      \begin{align}
+        %Derivera y.
+        y &= 
+        0,5e^{-ax²} 
+         \\
+        y^{\prime} &= 
+        -ax \cdot e^{-ax²} 
+         \\
+        y^{\prime \prime} &= 
+        f(x) \cdot g(x) + f^{\prime}(x) \cdot g(x) 
+         \\
+        %Förklarar vad funktionerna och dom deriverade funktionerna är. 
+        f(x) &= -ax 
+        \nonumber \\
+        f^{\prime}(x) &= -a
+        \nonumber \\
+        g(x) &= e{-ax²}
+        \nonumber \\
+        g^{\prime}(x) &= 
+        -2ax \cdot e^{-ax²}
+        \nonumber \\
+        %Byter ut funktionerna mot variablerna i andraderivatan.
+        y^{\prime \prime} &= 
+        -a \cdot e^{-ax²} + 2a²x² \cdot e^{\-ax²} 
+         \nonumber \\
+        &= ae^{-ax²}(2ax²-1)
+        \nonumber \\
+        a \cdot e^{-ax²} &> 0 
+        \nonumber \\
+        0 &= 2ax²-1 
+        \nonumber \\
+        x &= +-\sqrt{\frac{1}{2a}}
+      \end{align}
+
+      \newpage
+    \subsection{Motiveringen}
+
+      Med hjälp av derivering för $y$-funktionen, så kan vi lösa ut $x$ från potensen. \\
+      Vi gör en till derivering för att veta funktionens maximi- och minimipunkt. \\
+      I den andra deriveringen så får då varje funktion ett värde, och man kan
+      då byta ut funktionerna mot variablerna. $a \cdot e^{-ax} > 0$ och vi kan 
+      göra om det till en andragradsfunktion och använda en formel för att 
+      veta hur vi löser för x.
+
+\section{Deluppgift C}
+\label{sec:uppg3}
+
+  \subsection{Frågan}
+  
+    Fråga C vill att vi ska bestämma $a$ så att backen är brantast för $x = 1,0$.
+
+  \subsection{Lösningen}
+    \begin{align}
+      \text{(Tidigare)}
+      => a &= \frac{1}{2x²} 
+      \nonumber \\
+      \text{Om } 
+      x = 1 => 
+      a &= \frac{1}{2\cdot1²} 
+      \nonumber \\
+      &= \frac{1}{2} 
+      \nonumber \\
+      &= 0,5
+    \end{align}
+
+  \subsection{Motiveringen}
+    Det här är en väldigt simpel lösning. Vi vet redan sen innan att 
+    $a = \frac{1}{2x}$, och vi vet också att $x = 1$, och kan då enkelt byta ut
+    variabeln mott dess värde för att få att $a = 0,5$.
 
 \section{Diskussion [och slutsatser]}
 \label{sec:disk}
