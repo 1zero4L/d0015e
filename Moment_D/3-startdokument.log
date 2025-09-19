@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.12)  13 SEP 2025 01:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.12)  16 SEP 2025 17:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**3-startdokument.tex
+**3-startdokuemnt.tex
 (./3-startdokument.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -87,8 +87,8 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1588 strings out of 474662
- 29694 string characters out of 5751109
+ 1589 strings out of 474662
+ 29709 string characters out of 5751109
  429145 words of memory out of 5000000
  24685 multiletter control sequences out of 15000+600000
  561607 words of font info for 45 fonts, out of 8000000 for 9000
@@ -99,7 +99,7 @@ Here is how much of TeX's memory you used:
 mr12.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr17.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti12.pfb>
-Output written on 3-startdokument.pdf (2 pages, 58759 bytes).
+Output written on 3-startdokument.pdf (2 pages, 58748 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  18 compressed objects within 1 object stream
