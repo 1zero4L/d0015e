@@ -32,7 +32,7 @@
 % Ändra INTE nästa rad (gör så radnummer skrivs med fet stil)
 \renewcommand\linenumberfont{\normalfont\bfseries\small}
 
-\title{Rapport på lösning för upgift 14}
+\title{Rapport på lösning för uppgift 14}
 %
 \author{Ion Lund\thanks{email:
         \texttt{ionlun-5@student.ltu.se}}\\  
@@ -40,7 +40,7 @@
         Luleå tekniska universitet \\ 
         971 87 Luleå, Sverige}
 %          
-\date{\today}
+\date{22 september 2025}
 
 \begin{document}
 
@@ -50,22 +50,22 @@
 
 \begin{abstract}
 
-  Här skriver du en kort sammanfattning av rapporten som innehåller
-  det viktigaste. 
-
+  Uppgift 14 är en matematik uppgift från en av Skolverkets prov.
+  \cite{Skolverk} Rapporten innehåller detaljerade lösningar för deluppgift 
+  A, B, och C. Vi går också genom vad varje fråga vill att vi egentligen ska 
+  svara på, och vad våra lösningar egentligen betyder.
 \end{abstract}
 
 \section{Introduktion}
 \label{sec:introduktion}
 
-  Vi blir medvetna om en skidbacke som har fallhöjden 500 meter. Banprofilen ser 
-  du i en bild 
-  med höjden $y$ km som är en funktion av sträckan $x$ km.
-  Sambandet mellan $y$ och $x$ ges av att
+  Vi blir medvetna om en skidbacke som har fallhöjden 500 meter. Banprofilen 
+  ser du i en bild med höjden $y$ km som är en funktion av sträckan $x$ km.
+  \cite{Skolverk} Sambandet mellan $y$ och $x$ ges av att 
 
   \begin{align}
-    \label{eq:1}
-    y &= 0,5e^{-x^2} \nonumber \\
+    y &= 0,5e^{-x^2} \nonumber 
+    \\
     0 &\le~x \le 2,5 \nonumber
   \end{align}
 
@@ -75,14 +75,16 @@
 
   \subsection{Frågan}
 
-    Deluppgift A vill att man ska lösa för backens lutning där $x = 0,8$.\\
-    Vi ska alltså derivera en sammansatt funktion för att bestämma lutningen \\
-    i en viss punkt på backen. \\
-    I frågan använder vi oss av sambanden:
+    Deluppgift A \cite{Skolverk} vill att man ska lösa för backens lutning där
+    $x = 0,8$.
+    \\
+    Vi ska alltså derivera en sammansatt funktion för att bestämma lutningen 
+    \\
+    i en viss punkt på backen. I frågan använder vi oss av sambanden:
 
     \begin{align}
-      \label{eq:2}
-      y &= 0,5e^{-x^2} \nonumber \\
+      y &= 0,5e^{-x^2} \nonumber 
+      \\
       x &= 0,8 \nonumber
     \end{align}
 
@@ -91,26 +93,29 @@
   \subsection{Lösningen}
 
     \begin{align}
-      \label{eq:3}
-      x &= 0,8 \nonumber \\
-      y &= 0,5e^{-x²} \nonumber \\
-      y^{\prime}(0,8) &= -0,8 \cdot e^{-(0,8²)} \\
+      \label{eq:1}
+      x &= 0,8 \nonumber 
+      \\
+      y &= 0,5e^{-x²} \nonumber 
+      \\
+      y^{\prime}(0,8) &= -0,8 \cdot e^{-(0,8²)} 
+      \\
       &=-0,42. \nonumber
     \end{align}
 
   \subsection{Motiveringen}
 
-    Vi bestämde lutningen som $x = 0,8$ och eftersom att lutningen är det samma
-    som derivatan får vi då att $y^{\prime} = -x \cdot e^{-(x²)}$. Därifrån är 
-    det bara att byta ut $x$ mot $0,8$ och lösa uppgiften.
+    Vi bestämde lutningen som $x = 0,8$ och eftersom att lutningen är det 
+    samma som derivatan får vi då att $y^{\prime} = -x \cdot e^{-(x²)}$. 
+    Därifrån är det bara att byta ut $x$ mot $0,8$ och lösa uppgiften.
 
 \section{Deluppgift B}
 \label{sec:uppg2}
 
     \subsection{Frågan}
 
-      Fråga B vill att vi ska ställa upp en ekvation för bestämning av 
-      $x$-värdet.
+      Deluppgift B \cite{Skolverk} vill att vi ska ställa upp en ekvation för 
+      bestämning av $x$-värdet.
       I frågan får vi ny relevant information om att ett allmänt sätt att 
       beskriva backar med liknande banprofil som i uppgift A kan ges av 
       funktionen: 
@@ -125,94 +130,119 @@
     \subsection{Lösningen}
 
       \begin{align}
+        \label{eq:2}
         %Derivera y.
-        y &= 
-        0,5e^{-ax²} 
-         \\
-        y^{\prime} &= 
-        -ax \cdot e^{-ax²} 
-         \\
-        y^{\prime \prime} &= 
-        f(x) \cdot g(x) + f^{\prime}(x) \cdot g(x) 
-         \\
+        y &= 0,5e^{-ax²} \nonumber
+        \\
+        y^{\prime} &= -ax \cdot e^{-ax²} \nonumber
+        \\
+        y^{\prime \prime} &= f(x) \cdot g(x) + f^{\prime}(x) \cdot g(x) 
+        \nonumber
+        \\
         %Förklarar vad funktionerna och dom deriverade funktionerna är. 
-        f(x) &= -ax 
-        \nonumber \\
-        f^{\prime}(x) &= -a
-        \nonumber \\
-        g(x) &= e{-ax²}
-        \nonumber \\
-        g^{\prime}(x) &= 
-        -2ax \cdot e^{-ax²}
-        \nonumber \\
+        f(x) &= -ax \nonumber 
+        \\
+        f^{\prime}(x) &= -a \nonumber 
+        \\
+        g(x) &= e{-ax²} \nonumber 
+        \\
+        g^{\prime}(x) &= -2ax \cdot e^{-ax²} \nonumber 
+        \\
         %Byter ut funktionerna mot variablerna i andraderivatan.
-        y^{\prime \prime} &= 
-        -a \cdot e^{-ax²} + 2a²x² \cdot e^{\-ax²} 
-         \nonumber \\
-        &= ae^{-ax²}(2ax²-1)
-        \nonumber \\
-        a \cdot e^{-ax²} &> 0 
-        \nonumber \\
-        0 &= 2ax²-1 
-        \nonumber \\
+        y^{\prime \prime} &= -a \cdot e^{-ax²} + 2a²x² \cdot e^{\-ax²} 
+        \nonumber 
+        \\
+        &= ae^{-ax²}(2ax²-1) \nonumber 
+        \\
+        a \cdot e^{-ax²} &> 0 \nonumber 
+        \\
+        0 &= 2ax²-1 \nonumber 
+        \\
         x &= +-\sqrt{\frac{1}{2a}}
       \end{align}
 
       \newpage
     \subsection{Motiveringen}
 
-      Med hjälp av derivering för $y$-funktionen, så kan vi lösa ut $x$ från potensen. \\
-      Vi gör en till derivering för att veta funktionens maximi- och minimipunkt. \\
+      Med hjälp av derivering för $y$-funktionen, så kan vi lösa ut $x$ från 
+      potensen.
+      \\
+      Vi gör en till derivering för att veta funktionens maximi- och 
+      minimipunkt. 
+      \\
       I den andra deriveringen så får då varje funktion ett värde, och man kan
-      då byta ut funktionerna mot variablerna. $a \cdot e^{-ax} > 0$ och vi kan 
-      göra om det till en andragradsfunktion och använda en formel för att 
-      veta hur vi löser för x.
+      då byta ut funktionerna mot variablerna. $a \cdot e^{-ax} > 0$ och vi 
+      kan göra om det till en andragradsfunktion och använda en formel för 
+      att veta hur vi löser för x.
 
 \section{Deluppgift C}
 \label{sec:uppg3}
 
   \subsection{Frågan}
   
-    Fråga C vill att vi ska bestämma $a$ så att backen är brantast för $x = 1,0$.
+    Deluppgift C \cite{Skolverk} vill att vi ska bestämma $a$ så att backen 
+    är brantast för $x = 1,0$.
 
   \subsection{Lösningen}
+  \label{eq:3}
     \begin{align}
       \text{(Tidigare)}
-      => a &= \frac{1}{2x²} 
-      \nonumber \\
+      => a &= \frac{1}{2x²} \nonumber 
+      \\
       \text{Om } 
       x = 1 => 
-      a &= \frac{1}{2\cdot1²} 
-      \nonumber \\
-      &= \frac{1}{2} 
-      \nonumber \\
+      a &= \frac{1}{2\cdot1²} \nonumber 
+      \\
+      &= \frac{1}{2} \nonumber 
+      \\
       &= 0,5
     \end{align}
 
   \subsection{Motiveringen}
     Det här är en väldigt simpel lösning. Vi vet redan sen innan att 
-    $a = \frac{1}{2x}$, och vi vet också att $x = 1$, och kan då enkelt byta ut
-    variabeln mott dess värde för att få att $a = 0,5$.
+    $a = \frac{1}{2x}$, och vi vet också att $x = 1$, och kan då enkelt 
+    byta ut variabeln mott dess värde för att få att $a = 0,5$.
 
 \section{Diskussion [och slutsatser]}
 \label{sec:disk}
-
-Sammanfatta vad som avhandlats i rapporten, vad du kommit fram till,
-och sätt det i sitt sammanhang. 
-%
+  I den här uppgiften har vi löst tre stycken olika deluppgifter. 
+  I deluppgift A \cite{Skolverk} löste vi för backens lutning vid en 
+  specifik punkt. Ekvation \ref{eq:1} var en av flera lösningar på 
+  problemet, men anledningen till att vi körde med den ekvationen var 
+  för att den är väldigt kort och enkel att förstå samt skriva. 
+  \\
+  \\
+  I deluppgit B \cite{Skolverk} ställde vi upp ekvationen nr. \ref{eq:2} för 
+  bestämning av $x$-värdet i den punkt där backar med en sån banprofil är 
+  brantast. Det var en mer komplicerad uppgift då vi behövde använda oss av 
+  andraderivatan, samt att det ser ut som en stor röra av variabler. Men 
+  egentligen är den här lösningen så enkelt som det kan bli, och det blir 
+  mindre komplicerat när vi skriver definitionerna för funktionerna i 
+  andraderivatan. Därifrån kan vi få fram en andragradsfunktion för att lösa 
+  vad $x$ blir.
+  \\
+  \\
+  Deluppgift C \cite{Skolverk} är den lättaste uppgiften, då vi får reda på 
+  vad $x$ är lika med, samt att tack vare ekvation \ref{eq:2} så vet vi då 
+  redan vad $a$ är lika med. Ekvation \ref{eq:3} blir då en enkel uppgift 
+  där vi endast behöver skriva in numren för att få vårat svar. 
+  \\
+  \\
+  Hela uppgiften går ut på att vi ska visa våran kunskap inom derivering,
+  andraderivering, och funktioner. Det som är utmanande med uppgiften är att
+  kunna förstå vad allting ska användas till och hur man gör det, men när 
+  man väl förstår teorin bakom problemen och vilka ekvationer och steg som
+  kan vara nödvändiga för problemlösningen så är det inga större problem 
+  för att klara uppgifterna. 
+  %Sammanfatta vad som avhandlats i rapporten, vad du kommit fram till,
+  %och sätt det i sitt sammanhang. 
 \begin{thebibliography}{99}
 %
-\bibitem{latexcompanion} 
-Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
-\textit{The \LaTeX\ Companion}. 
-Addison-Wesley, Reading, Massachusetts, 1993.
-%
-\bibitem{einstein} 
-Albert Einstein. 
-\textit{Zur Elektrodynamik bewegter K{\"o}rper}. (German) 
-[\textit{On the electrodynamics of moving bodies}]. 
-Annalen der Physik, 322(10):891–921, 1905.
-%
+\bibitem{Skolverk} 
+Skolverket.
+\textit{Likvärdig bedömning i matematik med stöd av nationella prov}. 
+Skolverket, 2004.
+
 \end{thebibliography}
 %
 \end{document}
